@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIT TO REALITY ($EREAL)</title>
+    <style>
+        /* CRITICAL AESTHETIC: MS Paint / Windows 95 / Classic Wojak Style */
+        body {
+            background-color: #c0c0c0;
+            /* Win95 Gray */
+            color: #000;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+            /* The ultimate meme font */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Intentional slightly chaotic background pattern */
+            background-image: repeating-linear-gradient(45deg, #c0c0c0 25%, transparent 25%, transparent 75%, #c0c0c0 75%, #c0c0c0), repeating-linear-gradient(45deg, #c0c0c0 25%, #a0a0a0 25%, #a0a0a0 75%, #c0c0c0 75%, #c0c0c0);
+            background-position: 0 0, 10px 10px;
+            background-size: 20px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: inset -2px -2px #0a0a0a, inset 2px 2px #dfdfdf, inset -4px -4px #808080, inset 4px 4px #fff;
+            /* Deep 90s border */
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            border-bottom: 4px dashed #ff0000;
+            /* Harsh MS Paint red */
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #0000ff;
+            /* Pure blue */
+            text-shadow: 3px 3px 0px #00ff00, -3px -3px 0px #ff00ff;
+            /* Chaotic 3D shadow */
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        }
+
+        .marquee-container {
+            background-color: #ffff00;
+            /* Bright yellow */
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 5px;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+
+        /* Chunky Retro Buttons */
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            font-family: inherit;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: #c0c0c0;
+            border: 2px solid;
+            border-color: #fff #000 #000 #fff;
+            /* Classic Win95 button border */
+            box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080;
+            text-transform: uppercase;
+        }
+
+        .btn:active {
+            border-color: #000 #fff #fff #000;
+            box-shadow: inset 1px 1px #808080, inset -1px -1px #dfdfdf;
+            padding: 16px 29px 14px 31px;
+            /* "pressed" effect offset */
+        }
+
+        .btn-buy {
+            color: #008000;
+        }
+
+        /* Dark Green */
+        .btn-grass {
+            color: #800000;
+        }
+
+        /* Dark Red */
+
+        /* Sections */
+        h2 {
+            color: #ff0000;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            /* Mixed fonts for chaos */
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        /* Tokenomics Fake Chart */
+        .tokenomics-list {
+            list-style-type: square;
+            font-size: 1.2rem;
+            background: #00ffff;
+            /* Cyan */
+            padding: 20px 20px 20px 40px;
+            border: 3px inset #808080;
+        }
+
+        .tokenomics-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .t-pool {
+            color: #0000ff;
+        }
+
+        .t-grass {
+            color: #008000;
+        }
+
+        .t-dev {
+            color: #ff0000;
+        }
+
+        /* Roadmap */
+        .roadmap {
+            border: 5px solid #00ff00;
+            /* Neon green border */
+            padding: 15px;
+            background: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            /* Hacker aesthetic */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background: #000080;
+            /* Navy */
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: #ffff00;
+            font-weight: bold;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #ff00ff;
+        }
+
+        /* Glitch Effect Class (added via JS) */
+        .glitch {
+            animation: glitch-anim 0.2s linear infinite;
+        }
+
+        @keyframes glitch-anim {
+            0% {
+                transform: translate(0)
+            }
+
+            20% {
+                transform: translate(-5px, 5px);
+                filter: invert(1);
+            }
+
+            40% {
+                transform: translate(-5px, -5px) scale(1.1);
+            }
+
+            60% {
+                transform: translate(5px, 5px);
+                filter: hue-rotate(90deg);
+            }
+
+            80% {
+                transform: translate(5px, -5px) skew(10deg);
+            }
+
+            100% {
+                transform: translate(0)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container hero">
+        <marquee class="marquee-container" scrollamount="10">🚨 WARNING: YOU ARE TOO ONLINE. PROCEED DIRECTLY TO THE
+            EXIT. 🚨 TOUCH GRASS IMMEDIATELY. 🚨</marquee>
+
+        <h1>EXIT TO REALITY<br>($EREAL)</h1>
+
+        <p style="font-size: 1.5rem; font-weight: bold;">Stop refreshing the 1m chart. Grab your bags and prepare for
+            the outside world. <br>The official escape plan for the extremely online.</p>
+
+        <div class="btn-group">
+            <button class="btn btn-buy" onclick="window.open('https://pump.fun', '_blank')">[ Buy $EREAL ]</button>
+            <button class="btn btn-grass" id="btn-grass">[ Touch Grass (View Chart) ]</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Who tf are we?</h2>
+        <p>You’ve spent too long in the Pump.fun trenches. You've clicked too many suspicious Telegram links. It's time
+            to find the door.</p>
+        <p><strong>$EREAL</strong> is a community-driven experiment to see if degenerate gamblers can actually afford to
+            leave their rooms. We embrace the crude, the ugly, and the real.</p>
+    </div>
+
+
+
+    <div class="container roadmap">
+        <h2 style="color: #ff00ff; text-decoration: none;">> ROADMAP.EXE</h2>
+        <p>> <strong>Phase 1: Denial.</strong> Draw the ugliest token logo in MS Paint, launch it, and realize we are
+            still stuck inside.</p>
+        <p>> <strong>Phase 2: Anger & Memes.</strong> MS Paint Meme takeover on Crypto Twitter. Community "Reality
+            Check" raids. Buy real-life windows.</p>
+        <p>> <strong>Phase 3: Acceptance.</strong> Reach a market cap where we can all finally afford to leave our
+            basements, touch grass, and truly Exit to reality.</p>
+        <p class="blink">_</p>
+    </div>
+
+    <div class="container footer">
+        <p style="font-size: 2rem; margin-top: 0;">"Touch grass. Buy bags."</p>
+        <div>
+            <a href="#">[ TWITTER ]</a> |
+            <a href="#">[ TELEGRAM ]</a> |
+            <a href="https://pump.fun">[ PUMP.FUN ]</a>
+        </div>
+        <p style="font-size: 0.8rem; margin-bottom: 0;">(c) 1999 Anon. Best viewed in Netscape Navigator.</p>
+    </div>
+
+    <script>
+        // Interactive Glitch / Error script
+        document.getElementById('btn-grass').addEventListener('click', function () {
+            // First show the alert
+            alert("ERROR 404: GRASS NOT FOUND IN THE MATRIX.\n\nPLEASE BUY MORE $EREAL TO UNLOCK OUTSIDE DLC.");
+
+            // Then trigger a chaotic glitch effect on the body
+            document.body.classList.add('glitch');
+
+            // Randomly change background color erratically
+            let glitchInterval = setInterval(() => {
+                const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+                document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            }, 50);
+
+            // Stop the glitch after 1.5 seconds
+            setTimeout(() => {
+                clearInterval(glitchInterval);
+                document.body.classList.remove('glitch');
+                document.body.style.backgroundColor = ''; // Restore original
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
